@@ -1,14 +1,236 @@
 <!DOCTYPE html>
 <html lang="ru">
   @@include('html/head.html', {
-    'title': 'Главная'
+    'title': 'Тестовое'
   })
   <body>
     <div class="wrapper">
       @@include('html/header.html', {})
-      <main class="page">
-        <div data-observ></div>
-        
+      <main class="b-main">
+        <section class="b-section b-section--order">
+          <div class="b-container">
+            <div class="wrap">
+              <aside class="b-sidebar">
+                <div class="b-sidebar__avatar-wrap">
+                  <input class="b-sidebar__avatar" type="image" name="image" src="images/avatar.jpg" alt="БИ">
+                  <span class="b-sidebar__avatar-placeholder">БИ</span>
+                </div>
+                <span class="b-sidebar__name">Богдан Игнатенков</span>
+                <a class="b-sidebar__change-profile" href="javascript:void(0)">Изменить профиль</a>
+                <nav class="b-sidebar__navigation">
+                  <ul class="b-menu">
+                    <li class="b-menu__item"><a class="b-menu__link" href="javascript:void(0)" title="Активировать сертификат">Активировать сертификат</a></li>
+                    <li class="b-menu__item"><a class="b-menu__link active" href="javascript:void(0)" title="Мои заказы">Мои заказы</a><span class="b-sidebar__delivery">В доставке</span><span class="b-count">1</span></li>
+                    <li class="b-menu__item"><a class="b-menu__link" href="javascript:void(0)" title="Избранное">Избранное</a></li>
+                    <li class="b-menu__item"><a class="b-menu__link" href="javascript:void(0)" title="Помощ">Помощь</a></li>
+                    <li class="b-menu__item"><a class="b-menu__link" href="javascript:void(0)" title="Обратная связь">Обратная связь</a></li>
+                  </ul>
+                </nav>
+              </aside>
+              <div class="b-main-content">
+                <h3 class="b-title">Мои заказы <span class="b-title__number">3</span></h3>
+                <div class="b-new-order">
+                  <div class="b-order">
+                    <div class="b-order__wrap">
+                      <div class="b-order__wrapper">
+                      <div class="b-order__progress">В доставке
+                        <span class="b-order__number">№357765</span>
+                      </div>
+                      <a class="b-callback" href="javascript:void(0)" title="Связаться с нами">
+                          <div class="b-callback__image">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.0672 19.3605C15.7152 19.3605 16.8358 18.8896 17.8528 17.7879C17.9187 17.7125 17.9846 17.6278 18.0505 17.5524C18.6061 16.9309 18.8792 16.2812 18.8792 15.6785C18.8792 14.9722 18.5025 14.3319 17.6644 13.7574L14.8582 11.7987C13.973 11.1866 12.9466 11.1396 12.1556 11.9306L11.4587 12.6274C11.2139 12.8723 10.9785 12.8911 10.696 12.6933C10.1875 12.3543 9.22695 11.5068 8.56777 10.8476C7.89917 10.179 7.22116 9.42569 6.8539 8.85126C6.65615 8.55934 6.67498 8.33333 6.91982 8.08849L7.61666 7.39165C8.40768 6.60063 8.3606 5.57419 7.73908 4.68901L5.74271 1.8357C5.18712 1.02585 4.51852 0.649179 3.81226 0.639762C3.20958 0.630345 2.56923 0.903434 1.94772 1.44961C1.87238 1.51553 1.79705 1.58145 1.72171 1.64737C0.601109 2.6738 0.12085 3.77557 0.12085 5.48944C0.12085 8.26741 1.73113 11.5445 4.86694 14.6615C7.98392 17.7596 11.2233 19.3605 14.0672 19.3605ZM14.0672 17.7879C11.6659 17.8255 8.68077 16.1211 6.06288 13.522C3.42617 10.923 1.67463 7.82482 1.7123 5.42352C1.73113 4.41592 2.08897 3.53074 2.79524 2.90922C2.87057 2.85272 2.92707 2.80564 3.00241 2.74914C3.26608 2.52313 3.54858 2.40071 3.81226 2.40071C4.08534 2.40071 4.33018 2.51372 4.51852 2.79622L6.27947 5.44236C6.50548 5.76253 6.51489 6.12979 6.1853 6.44996L5.43195 7.19389C4.71627 7.89074 4.78219 8.71 5.2342 9.35035C5.74271 10.0566 6.69381 11.1396 7.49425 11.9306C8.35118 12.7781 9.51887 13.8234 10.1969 14.313C10.8372 14.765 11.6565 14.831 12.3533 14.1153L13.0973 13.3619C13.408 13.0323 13.7753 13.0418 14.1049 13.2583L16.7039 14.991C16.9959 15.1794 17.0994 15.4148 17.0994 15.6879C17.0994 15.9516 16.977 16.2341 16.751 16.5072C16.6945 16.5731 16.6474 16.6296 16.5909 16.7049C15.9694 17.4206 15.0842 17.7784 14.0672 17.7879Z" fill="#21A038"/>
+                            </svg>
+                          </div>
+                          <span class="b-callback__text">Связаться с нами</span>
+                      </a>
+                    </div>
+                    <div class="b-order__price-wrap">
+                      <span class="b-order__price-text">Оплачено картой</span>
+                      <span class="b-order__price">1344р.</span>
+                    </div>
+                    </div>
+                    <div class="b-order__detail-wrapper">
+                      <div class="b-order__adress">
+                        <span class="b-order__adress-title">Адрес доставки</span>
+                        <span class="b-order__adress-text">г. Санкт-Петербург, улица Нахимова, 10к1, 88 </span>
+                      </div>
+                      <div class="b-order__date">
+                        <span class="b-order__date-title">Примерное время доставки</span>
+                        <span class="b-order__date-text">23 марта 15:00 – 16:00</span>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="b-progress-bar ">
+                    <div class="b-progress-bar__indicator progress--3"></div>
+                    <div class="b-progress-bar__wrap active">
+                      <div class="b-progress-bar__picture">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.7614 3H3.23859C1.45281 3 0 4.54462 0 6.44326V16.5567C0 18.4554 1.45281 20 3.23859 20H20.7614C22.5472 20 24 18.4554 24 16.5567V6.44326C24 4.54462 22.5472 3 20.7614 3ZM3.23859 5.09589H20.7614C21.4602 5.09589 22.0287 5.70031 22.0287 6.44326V7.25831H1.97131V6.44326C1.97131 5.70031 2.5398 5.09589 3.23859 5.09589ZM20.7614 17.9041H3.23859C2.5398 17.9041 1.97131 17.2997 1.97131 16.5567V9.3542H22.0287V16.5567C22.0287 17.2997 21.4602 17.9041 20.7614 17.9041Z" fill="white"/>
+                            <path d="M5.99188 12.5164H4.48993C3.94557 12.5164 3.50427 12.9577 3.50427 13.502C3.50427 14.0464 3.94557 14.4877 4.48993 14.4877H5.99188C6.53625 14.4877 6.97754 14.0464 6.97754 13.502C6.97754 12.9577 6.53625 12.5164 5.99188 12.5164Z" fill="white"/>
+                          </svg>
+                      </div>
+                      <div class="b-progress-bar__text">Оплачено</div>
+                    </div>
+                    <div class="b-progress-bar__wrap active">
+                      <div class="b-progress-bar__picture">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_2_491)">
+                          <path d="M12 0L0 4.44452V19.5498L12 23.9943L24 19.5498V4.44452L12 0ZM12 8.19433L8.96887 7.07172L17.332 3.9743L20.3632 5.09692L12 8.19433ZM14.6327 2.97455L6.26953 6.07196L3.63684 5.09692L12 1.99951L14.6327 2.97455ZM1.875 6.44385L5.4375 7.7633V12.3926L7.31232 13.0869C7.31232 13.0862 7.3125 13.0854 7.3125 13.0847V8.45782L11.0625 9.84668V21.6475L1.875 18.2448V6.44385ZM12.9375 21.6475V9.84668L22.125 6.44385V18.2448L12.9375 21.6475Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_2_491">
+                          <rect width="24" height="24" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                      </div>
+                      <div class="b-progress-bar__text">Собрано</div>
+                    </div>
+                    <div class="b-progress-bar__wrap active">
+                      <div class="b-progress-bar__picture">
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9624 7.12434C16.2149 7.12434 17.2319 6.08848 17.2319 4.88313C17.2319 3.62127 16.2149 2.60425 14.9624 2.60425C13.71 2.60425 12.7212 3.62127 12.7212 4.88313C12.7212 6.08848 13.71 7.12434 14.9624 7.12434ZM18.1736 25.0634C18.7103 25.0634 19.1906 24.6679 19.1906 24.0088C19.1906 23.7639 19.1247 23.5379 18.9928 23.2742L16.9776 19.1873C16.7987 18.8201 16.5915 18.4905 16.4032 18.2268L15.1696 16.4753L15.2449 16.2399C15.5839 15.1569 15.7158 14.4977 15.7911 13.4619L15.9983 10.5521C16.1019 9.12071 15.2732 7.95302 13.7759 7.95302C12.6836 7.95302 11.8925 8.54628 10.8755 9.53505L9.33116 11.07C8.80382 11.5879 8.63431 12.0117 8.58723 12.6709L8.38947 15.0627C8.34239 15.7125 8.70965 16.1363 9.29349 16.1739C9.84909 16.2116 10.2634 15.882 10.3293 15.1852L10.5459 12.5673L11.4594 11.7574C11.6289 11.6068 11.8737 11.6915 11.8549 11.9458L11.6854 14.3C11.6006 15.4394 12.0997 16.2681 12.6647 16.9744L14.6799 19.5075C14.8777 19.7523 14.9059 19.8465 15.0001 20.0254L17.1471 24.3854C17.4014 24.8939 17.7781 25.0634 18.1736 25.0634ZM18.6162 13.9421H20.8951C21.5542 13.9421 21.9686 13.556 21.9686 12.9722C21.9686 12.3884 21.5448 12.0023 20.8856 12.0023H18.5032L16.8458 10.2036L16.6669 12.7933L17.3731 13.4995C17.7122 13.8386 18.0323 13.9421 18.6162 13.9421ZM9.03924 25.0634C9.36883 25.0634 9.66075 24.9128 9.86792 24.6679L12.9001 21.0613C13.2109 20.6846 13.2486 20.5904 13.3804 20.2232C13.4557 19.9783 13.5217 19.7429 13.5782 19.5169L11.8455 17.351L11.3369 19.7147L8.46481 23.1236C8.20114 23.4249 8.02222 23.6886 8.02222 24.0653C8.02222 24.6491 8.46481 25.0634 9.03924 25.0634Z" fill="#FAFAFA"/>
+                          </svg>
+                      </div>
+                      <div class="b-progress-bar__text">В доставке</div>
+                    </div>
+                    <div class="b-progress-bar__wrap">
+                      <div class="b-progress-bar__picture">
+                          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_497)">
+                            <path d="M13 26C9.52758 26 6.263 24.6477 3.80758 22.1924C1.35225 19.737 0 16.4724 0 13C0 9.52758 1.35225 6.263 3.80758 3.80758C6.263 1.35225 9.52758 0 13 0C16.4724 0 19.737 1.35225 22.1924 3.80758C24.6477 6.263 26 9.52758 26 13C26 16.4724 24.6477 19.737 22.1924 22.1924C19.737 24.6477 16.4724 26 13 26ZM13 2.03125C6.9518 2.03125 2.03125 6.9518 2.03125 13C2.03125 19.0482 6.9518 23.9688 13 23.9688C19.0482 23.9688 23.9688 19.0482 23.9688 13C23.9688 6.9518 19.0482 2.03125 13 2.03125ZM17.7601 15.2439C17.2869 14.9427 16.6591 15.0822 16.358 15.5555C16.3455 15.5752 15.0815 17.5226 12.9492 17.5226C10.8169 17.5226 9.55297 15.5752 9.54043 15.5555C9.23929 15.0823 8.61159 14.9428 8.13836 15.2439C7.66512 15.5451 7.52563 16.1728 7.82676 16.646C7.90232 16.7647 9.7144 19.5539 12.9492 19.5539C16.184 19.5539 17.9961 16.7648 18.0717 16.646C18.3728 16.1728 18.2333 15.5451 17.7601 15.2439ZM8.53125 8.37891C9.23239 8.37891 9.80078 8.9473 9.80078 9.64844C9.80078 10.3496 9.23239 10.918 8.53125 10.918C7.83011 10.918 7.26172 10.3496 7.26172 9.64844C7.26172 8.9473 7.83011 8.37891 8.53125 8.37891ZM16.1484 9.64844C16.1484 10.3496 16.7168 10.918 17.418 10.918C18.1191 10.918 18.6875 10.3496 18.6875 9.64844C18.6875 8.9473 18.1191 8.37891 17.418 8.37891C16.7168 8.37891 16.1484 8.9473 16.1484 9.64844Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_497">
+                            <rect width="26" height="26" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                      </div>
+                      <div class="b-progress-bar__text">Получено</div>
+                    </div>
+                  </div>
+                  <div class="b-new-order__card-wrap">
+                    <div class="b-new-order__card">
+                        <div class="b-new-order__card-image">
+                        <img class="b-new-order__image" src="/images/1.jpg" alt="Феназепам">
+                      </div>
+                      <div class="b-new-order__card-wrapper">
+                        <a class="b-new-order__card-name" href="javascript:void(0)">Феназепам, 50 таблеток</a>
+                        <div class="b-new-order__card-description">
+                          <a class="b-new-order__card-instructions" href="javascript:void(0)">Инструкция по применению</a>
+                          <a class="b-new-order__card-conditions" href="javascript:void(0)">Условия хранения</a>
+                        </div>
+                        <div class="b-new-order__card-recept">Курьер попросит рецепт</div>
+                      </div>
+                      <div class="b-new-order__card-price">542 ₽</div>
+                    </div>
+                    <div class="b-new-order__card">
+                        <div class="b-new-order__card-image">
+                          <img class="b-new-order__image" src="/images/2.jpg" alt="Арбидол">
+                        </div>
+                        <div class="b-new-order__card-wrapper">
+                          <a class="b-new-order__card-name" href="javascript:void(0)">Арбидол, капсулы 100 мг, 10 шт.</a>
+                          <div class="b-new-order__card-description">
+                            <a class="b-new-order__card-instructions" href="javascript:void(0)">Инструкция по применению</a>
+                            <a class="b-new-order__card-conditions" href="javascript:void(0)">Условия хранения</a>
+                          </div>
+                        </div>
+                        <div class="b-new-order__card-price">542 ₽</div>
+                    </div>
+                    <div class="b-new-order__card">
+                        <div class="b-new-order__card-image">
+                          <img class="b-new-order__image" src="/images/3.jpg" alt="максилак">
+                        </div>
+                        <div class="b-new-order__card-wrapper">
+                          <a class="b-new-order__card-name" href="javascript:void(0)">Максилак синбиотик капсулы, 10 шт.</a>
+                          <div class="b-new-order__card-description">
+                            <a class="b-new-order__card-instructions" href="javascript:void(0)">Инструкция по применению</a>
+                            <a class="b-new-order__card-conditions" href="javascript:void(0)">Условия хранения</a>
+                          </div>
+                        </div>
+                        <div class="b-new-order__card-price">542 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-old-order">
+                   <div class="b-old-order__card">
+                     <div class="b-order">
+                      <div class="b-order__wrap">
+                        <div class="b-order__wrapper">
+                        <div class="b-order__progress">Доставлен 11 мая
+                          <span class="b-order__number">№357765</span>
+                        </div>
+                      </div>
+                      <div class="b-order__price-wrap">
+                        <span class="b-order__price-text">Оплачено онлайн</span>
+                        <span class="b-order__price">654р.</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="b-old-order__image-wrap">
+                        <img class="b-old-order__image" src="/images/flebon.jpg" alt="Флебон">
+                        <img class="b-old-order__image" src="/images/phen.jpg" alt="Феназепам">
+                        <img class="b-old-order__image" src="/images/arbidol.jpg" alt="Арбидол">
+                      </div>
+                      <a class="b-old-order__link" href="javascript:void(0)" title="Все товары">
+                        <span class="b-old-order__link-text">Все товары</span>
+                      </a>
+                    </div>
+                    <div class="b-old-order__card">
+                     <div class="b-order">
+                      <div class="b-order__wrap">
+                        <div class="b-order__wrapper">
+                        <div class="b-order__progress">Доставлен 25 марта 
+                          <span class="b-order__number">№357765</span>
+                        </div>
+                      </div>
+                      <div class="b-order__price-wrap">
+                        <span class="b-order__price-text">Оплачено наличными</span>
+                        <span class="b-order__price">778р.</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="b-old-order__image-wrap">
+                        <img class="b-old-order__image" src="/images/creon.jpg" alt="Креон">
+                        <img class="b-old-order__image" src="/images/phen.jpg" alt="Феназепам">
+                        <img class="b-old-order__image" src="/images/arbidol.jpg" alt="Арбидол">
+                        <img class="b-old-order__image" src="/images/flebon.jpg" alt="Флебон">
+                      </div>
+                      <a class="b-old-order__link" href="javascript:void(0)" title="Все товары">
+                        <span class="b-old-order__link-text">Все товары</span>
+                      </a>
+                    </div>
+                 </div> 
+                 </div>
+                 </div>   
+                </div>
+                   
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="b-section b-section--application">
+          <div class="b-container">
+            <div class="b-application">
+              <h3 class="b-application__title">Скачай приложение&nbsp;&nbsp;
+        и экономь еще больше</h3>
+            <div class="b-application__badge-wrapper">
+                <a class="b-application__badge-apple" href="javascript:void(0)" title="Доступно в Appstore">
+                  <img class="b-application__badge" src="images/applestore.png" alt="Доступно в Appstore">
+                </a>
+                <a class="b-application__badge-google" href="javascript:void(0)" title="Доступно в Google Play">
+                  <img class="b-application__badge" src="images/googlestore.png" alt="Доступно в Google Play">
+                </a>
+            </div>
+            <div class="b-application__image-wrapper">
+                <img class="b-application__image" src="images/second-phone.png" alt="Телефон" />
+                <img class="b-application__image" src="images/first-phone.png" alt="Телефон"/>
+            </div>
+            </div>
+        </div>
+        </section>
       </main>
       @@include('html/footer.html', {})
     </div>

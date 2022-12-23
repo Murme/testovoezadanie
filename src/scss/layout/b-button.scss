@@ -1,0 +1,25 @@
+.b-button {
+    position: relative;
+    width: 167px;
+    height: 50px;
+    background: linear-gradient(270.1deg, #8168F0 8.74%, #68F096 99.91%);
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 60px 14px 39px;
+    margin-right: 12px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 35px;
+        top: 50%;
+        margin-top: -7px;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transform: rotate(-135deg);
+    }
+}

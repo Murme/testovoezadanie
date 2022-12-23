@@ -1,0 +1,28 @@
+.b-city {
+    position: relative;
+    margin-right: 24px;
+    padding-right: 16px;
+    &__select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #8168F0;
+    }
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -5px;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #8168F0;
+        border-left: 2px solid #8168F0;
+        transform: rotate(-135deg);
+    }
+}

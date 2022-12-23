@@ -1,0 +1,16 @@
+.b-callback {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #21A038;
+    }
+
+    &__image {
+        margin-right: 10px;
+    }
+}

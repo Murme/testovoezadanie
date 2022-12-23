@@ -1,0 +1,36 @@
+.b-application {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 38px 0;
+
+    &__title {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 31px;
+        color: #FFFFFF;
+        width: 297px;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 392px
+    }
+
+    &__image {
+        position: absolute;
+        bottom: -39px;
+
+        &:first-child {
+            left: 0;
+        }
+
+        &:nth-child(2) {
+            right: 0;
+        }
+    }
+
+    &__badge-apple {
+        margin-right: 14px;
+    }
+}
